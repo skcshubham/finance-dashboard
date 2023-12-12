@@ -11,15 +11,15 @@ const Navbar = (props: Props) => {
   const [selected, setSelected] = useState("dashboard");
   return (
     <FlexBetween
-      mb="0.5rem"
+      mb="0.75rem"
       p="0.2rem 0rem"
       color={palette.grey[300]}
     >
       {/* LEFT SIDE */}
-      <FlexBetween gap="0.7rem">
-        <PixIcon sx={{ fontSize: "30px" }} />
+      <FlexBetween gap="0.5rem">
+        <PixIcon sx={{ fontSize: "25px" }} />
         <Typography variant="h4" fontSize="18px">
-          Financeboard
+          finboard
         </Typography>
       </FlexBetween>
 
@@ -39,7 +39,7 @@ const Navbar = (props: Props) => {
           >
             <Typography
               variant="h4"
-              fontSize="16px"
+              fontSize="14px"
               style={{
                 color:
                   selected === "dashboard"
@@ -66,7 +66,7 @@ const Navbar = (props: Props) => {
           >
             <Typography
               variant="h4"
-              fontSize="16px"
+              fontSize="14px"
               style={{
                 color:
                   selected === "predictions"
